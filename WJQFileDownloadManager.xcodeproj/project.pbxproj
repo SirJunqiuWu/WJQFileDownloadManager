@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04000B3E1E8E271200A38197 /* TaskLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04000B3D1E8E271200A38197 /* TaskLoadingCell.m */; };
+		04000B411E8E2D3200A38197 /* TaskFinishedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04000B401E8E2D3200A38197 /* TaskFinishedCell.m */; };
+		04000B441E8E2D4200A38197 /* TaskFailedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04000B431E8E2D4200A38197 /* TaskFailedCell.m */; };
+		04000B471E8E360F00A38197 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04000B461E8E360F00A38197 /* HeaderView.m */; };
+		045519311E8B9F3A004B132E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045519301E8B9F3A004B132E /* main.m */; };
+		045519341E8B9F3A004B132E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045519331E8B9F3A004B132E /* AppDelegate.m */; };
+		0455193A1E8B9F3A004B132E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045519381E8B9F3A004B132E /* Main.storyboard */; };
+		0455193C1E8B9F3A004B132E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0455193B1E8B9F3A004B132E /* Assets.xcassets */; };
+		0455193F1E8B9F3A004B132E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0455193D1E8B9F3A004B132E /* LaunchScreen.storyboard */; };
+		0455194A1E8B9F3A004B132E /* WJQFileDownloadManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045519491E8B9F3A004B132E /* WJQFileDownloadManagerTests.m */; };
+		045519551E8B9F3A004B132E /* WJQFileDownloadManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045519541E8B9F3A004B132E /* WJQFileDownloadManagerUITests.m */; };
+		0455196D1E8BA8AF004B132E /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0455196C1E8BA8AF004B132E /* TaskViewController.m */; };
+		045519701E8BA8CB004B132E /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0455196F1E8BA8CB004B132E /* DownloadViewController.m */; };
+		045519731E8BA901004B132E /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045519721E8BA901004B132E /* MyTabBarController.m */; };
+		045519761E8BBBD8004B132E /* TaskListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045519751E8BBBD8004B132E /* TaskListCell.m */; };
+		0455197B1E8C9E49004B132E /* WJQTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0455197A1E8C9E49004B132E /* WJQTask.m */; };
+		0455197E1E8C9E56004B132E /* WJQTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0455197D1E8C9E56004B132E /* WJQTaskManager.m */; };
+		0485E0921E975BB7007A7E4F /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485E0911E975BB7007A7E4F /* download@2x.png */; };
+		0485E0941E977CFD007A7E4F /* stopDownload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485E0931E977CFD007A7E4F /* stopDownload@2x.png */; };
+		0485E0961E9780A3007A7E4F /* startDownload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485E0951E9780A3007A7E4F /* startDownload@2x.png */; };
+		599CDA485E2FD4E2DAB7C2CC /* libPods-WJQFileDownloadManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A037AFC084F0BCA89B65A5A0 /* libPods-WJQFileDownloadManager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		045519461E8B9F3A004B132E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045519241E8B9F3A004B132E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0455192B1E8B9F3A004B132E;
+			remoteInfo = WJQFileDownloadManager;
+		};
+		045519511E8B9F3A004B132E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045519241E8B9F3A004B132E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0455192B1E8B9F3A004B132E;
+			remoteInfo = WJQFileDownloadManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04000B3C1E8E271200A38197 /* TaskLoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskLoadingCell.h; sourceTree = "<group>"; };
+		04000B3D1E8E271200A38197 /* TaskLoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskLoadingCell.m; sourceTree = "<group>"; };
+		04000B3F1E8E2D3200A38197 /* TaskFinishedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskFinishedCell.h; sourceTree = "<group>"; };
+		04000B401E8E2D3200A38197 /* TaskFinishedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskFinishedCell.m; sourceTree = "<group>"; };
+		04000B421E8E2D4200A38197 /* TaskFailedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskFailedCell.h; sourceTree = "<group>"; };
+		04000B431E8E2D4200A38197 /* TaskFailedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskFailedCell.m; sourceTree = "<group>"; };
+		04000B451E8E360F00A38197 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		04000B461E8E360F00A38197 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		0455192C1E8B9F3A004B132E /* WJQFileDownloadManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJQFileDownloadManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045519301E8B9F3A004B132E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		045519321E8B9F3A004B132E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		045519331E8B9F3A004B132E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		045519391E8B9F3A004B132E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0455193B1E8B9F3A004B132E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0455193E1E8B9F3A004B132E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		045519401E8B9F3A004B132E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045519451E8B9F3A004B132E /* WJQFileDownloadManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJQFileDownloadManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045519491E8B9F3A004B132E /* WJQFileDownloadManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJQFileDownloadManagerTests.m; sourceTree = "<group>"; };
+		0455194B1E8B9F3A004B132E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045519501E8B9F3A004B132E /* WJQFileDownloadManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJQFileDownloadManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045519541E8B9F3A004B132E /* WJQFileDownloadManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJQFileDownloadManagerUITests.m; sourceTree = "<group>"; };
+		045519561E8B9F3A004B132E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045519621E8BA3AF004B132E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0455196B1E8BA8AF004B132E /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
+		0455196C1E8BA8AF004B132E /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
+		0455196E1E8BA8CB004B132E /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		0455196F1E8BA8CB004B132E /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		045519711E8BA901004B132E /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
+		045519721E8BA901004B132E /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
+		045519741E8BBBD8004B132E /* TaskListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListCell.h; sourceTree = "<group>"; };
+		045519751E8BBBD8004B132E /* TaskListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListCell.m; sourceTree = "<group>"; };
+		045519791E8C9E49004B132E /* WJQTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJQTask.h; sourceTree = "<group>"; };
+		0455197A1E8C9E49004B132E /* WJQTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJQTask.m; sourceTree = "<group>"; };
+		0455197C1E8C9E56004B132E /* WJQTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJQTaskManager.h; sourceTree = "<group>"; };
+		0455197D1E8C9E56004B132E /* WJQTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJQTaskManager.m; sourceTree = "<group>"; };
+		0485E0911E975BB7007A7E4F /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
+		0485E0931E977CFD007A7E4F /* stopDownload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stopDownload@2x.png"; sourceTree = "<group>"; };
+		0485E0951E9780A3007A7E4F /* startDownload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startDownload@2x.png"; sourceTree = "<group>"; };
+		2FA3CDB617FAEF52FA16CC02 /* Pods-WJQFileDownloadManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJQFileDownloadManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-WJQFileDownloadManager/Pods-WJQFileDownloadManager.release.xcconfig"; sourceTree = "<group>"; };
+		A037AFC084F0BCA89B65A5A0 /* libPods-WJQFileDownloadManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WJQFileDownloadManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F83D374B24885D8BABC8664E /* Pods-WJQFileDownloadManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WJQFileDownloadManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WJQFileDownloadManager/Pods-WJQFileDownloadManager.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045519291E8B9F3A004B132E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				599CDA485E2FD4E2DAB7C2CC /* libPods-WJQFileDownloadManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045519421E8B9F3A004B132E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0455194D1E8B9F3A004B132E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045519231E8B9F3A004B132E = {
+			isa = PBXGroup;
+			children = (
+				0455192E1E8B9F3A004B132E /* WJQFileDownloadManager */,
+				045519481E8B9F3A004B132E /* WJQFileDownloadManagerTests */,
+				045519531E8B9F3A004B132E /* WJQFileDownloadManagerUITests */,
+				0455192D1E8B9F3A004B132E /* Products */,
+				C756DF792C4A1A78D5777267 /* Pods */,
+				99D20E4DEEC348A0F3203D8B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0455192D1E8B9F3A004B132E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0455192C1E8B9F3A004B132E /* WJQFileDownloadManager.app */,
+				045519451E8B9F3A004B132E /* WJQFileDownloadManagerTests.xctest */,
+				045519501E8B9F3A004B132E /* WJQFileDownloadManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0455192E1E8B9F3A004B132E /* WJQFileDownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				045519641E8BA56C004B132E /* Source */,
+				045519631E8BA56C004B132E /* Code */,
+				045519321E8B9F3A004B132E /* AppDelegate.h */,
+				045519331E8B9F3A004B132E /* AppDelegate.m */,
+				045519381E8B9F3A004B132E /* Main.storyboard */,
+				0455193B1E8B9F3A004B132E /* Assets.xcassets */,
+				0455193D1E8B9F3A004B132E /* LaunchScreen.storyboard */,
+				045519401E8B9F3A004B132E /* Info.plist */,
+				0455192F1E8B9F3A004B132E /* Supporting Files */,
+			);
+			path = WJQFileDownloadManager;
+			sourceTree = "<group>";
+		};
+		0455192F1E8B9F3A004B132E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				045519301E8B9F3A004B132E /* main.m */,
+				045519621E8BA3AF004B132E /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		045519481E8B9F3A004B132E /* WJQFileDownloadManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				045519491E8B9F3A004B132E /* WJQFileDownloadManagerTests.m */,
+				0455194B1E8B9F3A004B132E /* Info.plist */,
+			);
+			path = WJQFileDownloadManagerTests;
+			sourceTree = "<group>";
+		};
+		045519531E8B9F3A004B132E /* WJQFileDownloadManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				045519541E8B9F3A004B132E /* WJQFileDownloadManagerUITests.m */,
+				045519561E8B9F3A004B132E /* Info.plist */,
+			);
+			path = WJQFileDownloadManagerUITests;
+			sourceTree = "<group>";
+		};
+		045519631E8BA56C004B132E /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				045519661E8BA597004B132E /* Function */,
+				045519651E8BA597004B132E /* Class */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		045519641E8BA56C004B132E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0485E0951E9780A3007A7E4F /* startDownload@2x.png */,
+				0485E0931E977CFD007A7E4F /* stopDownload@2x.png */,
+				0485E0911E975BB7007A7E4F /* download@2x.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		045519651E8BA597004B132E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		045519661E8BA597004B132E /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				045519671E8BA6B8004B132E /* Main */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		045519671E8BA6B8004B132E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				045519681E8BA6B8004B132E /* Controller */,
+				045519691E8BA6B8004B132E /* Model */,
+				0455196A1E8BA6B8004B132E /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		045519681E8BA6B8004B132E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0455196B1E8BA8AF004B132E /* TaskViewController.h */,
+				0455196C1E8BA8AF004B132E /* TaskViewController.m */,
+				0455196E1E8BA8CB004B132E /* DownloadViewController.h */,
+				0455196F1E8BA8CB004B132E /* DownloadViewController.m */,
+				045519711E8BA901004B132E /* MyTabBarController.h */,
+				045519721E8BA901004B132E /* MyTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		045519691E8BA6B8004B132E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				045519781E8C9E20004B132E /* WJQTaskManager */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0455196A1E8BA6B8004B132E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				045519741E8BBBD8004B132E /* TaskListCell.h */,
+				045519751E8BBBD8004B132E /* TaskListCell.m */,
+				04000B3C1E8E271200A38197 /* TaskLoadingCell.h */,
+				04000B3D1E8E271200A38197 /* TaskLoadingCell.m */,
+				04000B3F1E8E2D3200A38197 /* TaskFinishedCell.h */,
+				04000B401E8E2D3200A38197 /* TaskFinishedCell.m */,
+				04000B421E8E2D4200A38197 /* TaskFailedCell.h */,
+				04000B431E8E2D4200A38197 /* TaskFailedCell.m */,
+				04000B451E8E360F00A38197 /* HeaderView.h */,
+				04000B461E8E360F00A38197 /* HeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045519781E8C9E20004B132E /* WJQTaskManager */ = {
+			isa = PBXGroup;
+			children = (
+				045519791E8C9E49004B132E /* WJQTask.h */,
+				0455197A1E8C9E49004B132E /* WJQTask.m */,
+				0455197C1E8C9E56004B132E /* WJQTaskManager.h */,
+				0455197D1E8C9E56004B132E /* WJQTaskManager.m */,
+			);
+			path = WJQTaskManager;
+			sourceTree = "<group>";
+		};
+		99D20E4DEEC348A0F3203D8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A037AFC084F0BCA89B65A5A0 /* libPods-WJQFileDownloadManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C756DF792C4A1A78D5777267 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F83D374B24885D8BABC8664E /* Pods-WJQFileDownloadManager.debug.xcconfig */,
+				2FA3CDB617FAEF52FA16CC02 /* Pods-WJQFileDownloadManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0455192B1E8B9F3A004B132E /* WJQFileDownloadManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045519591E8B9F3A004B132E /* Build configuration list for PBXNativeTarget "WJQFileDownloadManager" */;
+			buildPhases = (
+				602874D0E898EBE94B602C84 /* [CP] Check Pods Manifest.lock */,
+				045519281E8B9F3A004B132E /* Sources */,
+				045519291E8B9F3A004B132E /* Frameworks */,
+				0455192A1E8B9F3A004B132E /* Resources */,
+				B2953843730921C1BE29F029 /* [CP] Embed Pods Frameworks */,
+				CBD721FE28A7F6DF8384FB63 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WJQFileDownloadManager;
+			productName = WJQFileDownloadManager;
+			productReference = 0455192C1E8B9F3A004B132E /* WJQFileDownloadManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		045519441E8B9F3A004B132E /* WJQFileDownloadManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0455195C1E8B9F3A004B132E /* Build configuration list for PBXNativeTarget "WJQFileDownloadManagerTests" */;
+			buildPhases = (
+				045519411E8B9F3A004B132E /* Sources */,
+				045519421E8B9F3A004B132E /* Frameworks */,
+				045519431E8B9F3A004B132E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045519471E8B9F3A004B132E /* PBXTargetDependency */,
+			);
+			name = WJQFileDownloadManagerTests;
+			productName = WJQFileDownloadManagerTests;
+			productReference = 045519451E8B9F3A004B132E /* WJQFileDownloadManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0455194F1E8B9F3A004B132E /* WJQFileDownloadManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0455195F1E8B9F3A004B132E /* Build configuration list for PBXNativeTarget "WJQFileDownloadManagerUITests" */;
+			buildPhases = (
+				0455194C1E8B9F3A004B132E /* Sources */,
+				0455194D1E8B9F3A004B132E /* Frameworks */,
+				0455194E1E8B9F3A004B132E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045519521E8B9F3A004B132E /* PBXTargetDependency */,
+			);
+			name = WJQFileDownloadManagerUITests;
+			productName = WJQFileDownloadManagerUITests;
+			productReference = 045519501E8B9F3A004B132E /* WJQFileDownloadManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045519241E8B9F3A004B132E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JackWu;
+				TargetAttributes = {
+					0455192B1E8B9F3A004B132E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PAG7WP2FU6;
+						ProvisioningStyle = Automatic;
+					};
+					045519441E8B9F3A004B132E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PAG7WP2FU6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0455192B1E8B9F3A004B132E;
+					};
+					0455194F1E8B9F3A004B132E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PAG7WP2FU6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0455192B1E8B9F3A004B132E;
+					};
+				};
+			};
+			buildConfigurationList = 045519271E8B9F3A004B132E /* Build configuration list for PBXProject "WJQFileDownloadManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 045519231E8B9F3A004B132E;
+			productRefGroup = 0455192D1E8B9F3A004B132E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0455192B1E8B9F3A004B132E /* WJQFileDownloadManager */,
+				045519441E8B9F3A004B132E /* WJQFileDownloadManagerTests */,
+				0455194F1E8B9F3A004B132E /* WJQFileDownloadManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0455192A1E8B9F3A004B132E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0485E0921E975BB7007A7E4F /* download@2x.png in Resources */,
+				0485E0941E977CFD007A7E4F /* stopDownload@2x.png in Resources */,
+				0455193F1E8B9F3A004B132E /* LaunchScreen.storyboard in Resources */,
+				0455193C1E8B9F3A004B132E /* Assets.xcassets in Resources */,
+				0455193A1E8B9F3A004B132E /* Main.storyboard in Resources */,
+				0485E0961E9780A3007A7E4F /* startDownload@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045519431E8B9F3A004B132E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0455194E1E8B9F3A004B132E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		602874D0E898EBE94B602C84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2953843730921C1BE29F029 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJQFileDownloadManager/Pods-WJQFileDownloadManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD721FE28A7F6DF8384FB63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WJQFileDownloadManager/Pods-WJQFileDownloadManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045519281E8B9F3A004B132E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0455196D1E8BA8AF004B132E /* TaskViewController.m in Sources */,
+				0455197B1E8C9E49004B132E /* WJQTask.m in Sources */,
+				045519341E8B9F3A004B132E /* AppDelegate.m in Sources */,
+				0455197E1E8C9E56004B132E /* WJQTaskManager.m in Sources */,
+				045519761E8BBBD8004B132E /* TaskListCell.m in Sources */,
+				045519311E8B9F3A004B132E /* main.m in Sources */,
+				045519701E8BA8CB004B132E /* DownloadViewController.m in Sources */,
+				04000B471E8E360F00A38197 /* HeaderView.m in Sources */,
+				045519731E8BA901004B132E /* MyTabBarController.m in Sources */,
+				04000B411E8E2D3200A38197 /* TaskFinishedCell.m in Sources */,
+				04000B3E1E8E271200A38197 /* TaskLoadingCell.m in Sources */,
+				04000B441E8E2D4200A38197 /* TaskFailedCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045519411E8B9F3A004B132E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0455194A1E8B9F3A004B132E /* WJQFileDownloadManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0455194C1E8B9F3A004B132E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045519551E8B9F3A004B132E /* WJQFileDownloadManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045519471E8B9F3A004B132E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0455192B1E8B9F3A004B132E /* WJQFileDownloadManager */;
+			targetProxy = 045519461E8B9F3A004B132E /* PBXContainerItemProxy */;
+		};
+		045519521E8B9F3A004B132E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0455192B1E8B9F3A004B132E /* WJQFileDownloadManager */;
+			targetProxy = 045519511E8B9F3A004B132E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		045519381E8B9F3A004B132E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045519391E8B9F3A004B132E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0455193D1E8B9F3A004B132E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0455193E1E8B9F3A004B132E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045519571E8B9F3A004B132E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		045519581E8B9F3A004B132E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0455195A1E8B9F3A004B132E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F83D374B24885D8BABC8664E /* Pods-WJQFileDownloadManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PAG7WP2FU6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WJQFileDownloadManager/PrefixHeader.pch;
+				INFOPLIST_FILE = WJQFileDownloadManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RongZhu.WJQFileDownloadManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0455195B1E8B9F3A004B132E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA3CDB617FAEF52FA16CC02 /* Pods-WJQFileDownloadManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PAG7WP2FU6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WJQFileDownloadManager/PrefixHeader.pch;
+				INFOPLIST_FILE = WJQFileDownloadManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RongZhu.WJQFileDownloadManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0455195D1E8B9F3A004B132E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PAG7WP2FU6;
+				INFOPLIST_FILE = WJQFileDownloadManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RongZhu.WJQFileDownloadManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WJQFileDownloadManager.app/WJQFileDownloadManager";
+			};
+			name = Debug;
+		};
+		0455195E1E8B9F3A004B132E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PAG7WP2FU6;
+				INFOPLIST_FILE = WJQFileDownloadManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RongZhu.WJQFileDownloadManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WJQFileDownloadManager.app/WJQFileDownloadManager";
+			};
+			name = Release;
+		};
+		045519601E8B9F3A004B132E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PAG7WP2FU6;
+				INFOPLIST_FILE = WJQFileDownloadManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RongZhu.WJQFileDownloadManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WJQFileDownloadManager;
+			};
+			name = Debug;
+		};
+		045519611E8B9F3A004B132E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PAG7WP2FU6;
+				INFOPLIST_FILE = WJQFileDownloadManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RongZhu.WJQFileDownloadManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WJQFileDownloadManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045519271E8B9F3A004B132E /* Build configuration list for PBXProject "WJQFileDownloadManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045519571E8B9F3A004B132E /* Debug */,
+				045519581E8B9F3A004B132E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045519591E8B9F3A004B132E /* Build configuration list for PBXNativeTarget "WJQFileDownloadManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0455195A1E8B9F3A004B132E /* Debug */,
+				0455195B1E8B9F3A004B132E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0455195C1E8B9F3A004B132E /* Build configuration list for PBXNativeTarget "WJQFileDownloadManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0455195D1E8B9F3A004B132E /* Debug */,
+				0455195E1E8B9F3A004B132E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0455195F1E8B9F3A004B132E /* Build configuration list for PBXNativeTarget "WJQFileDownloadManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045519601E8B9F3A004B132E /* Debug */,
+				045519611E8B9F3A004B132E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 045519241E8B9F3A004B132E /* Project object */;
+}
