@@ -135,6 +135,26 @@ static WJQTaskManager *myManager = nil;
     task = [[WJQTask alloc]initWithURL:task.taskURL];
     [task setValue:self forKey:@"manager"];
     
+    if ([self taskIsLoaded:task] || [self taskIsInTmp:task])
+    {
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self confirmDownloadTaskWithTask:task];
+        }];
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提示" message:@"任务已经在列表中,是否重新下载" preferredStyle:UIAlertControllerStyleAlert];
+        [alertVC addAction:cancel];
+        [alertVC addAction:ok];
+        [[[TWVCManager shareVCManager]getTopViewController].navigationController presentViewController:alertVC animated:YES  completion:NULL];
+    }
+    else
+    {
+        [self confirmDownloadTaskWithTask:task];
+    }
+}
+
+- (void)confirmDownloadTaskWithTask:(WJQTask *)task {
     NSError *error = nil;
     
     //需要判断当前添加的任务是否已经下载 或者 已经在缓存中(缓存没结果的，缓存结果为失败的)
@@ -150,6 +170,7 @@ static WJQTaskManager *myManager = nil;
     {
         error = [NSError errorWithDomain:@"任务下载失败过" code:0 userInfo:nil];
     }
+    
     
     //任务将要被添加
     if ([self.delegate respondsToSelector:@selector(taskWillAdd:Error:)])

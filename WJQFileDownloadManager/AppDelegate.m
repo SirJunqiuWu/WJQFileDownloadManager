@@ -11,6 +11,8 @@
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic) UIViewController *rootViewController;
+
 @end
 
 @implementation AppDelegate
@@ -52,5 +54,10 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Getter
+
+- (UIViewController *)rootViewController {
+    return self.window.rootViewController;
+}
 
 @end

@@ -11,6 +11,9 @@
 		04000B411E8E2D3200A38197 /* TaskFinishedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04000B401E8E2D3200A38197 /* TaskFinishedCell.m */; };
 		04000B441E8E2D4200A38197 /* TaskFailedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04000B431E8E2D4200A38197 /* TaskFailedCell.m */; };
 		04000B471E8E360F00A38197 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04000B461E8E360F00A38197 /* HeaderView.m */; };
+		043DBBD11E9B626E008E61F4 /* WJQTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 043DBBCE1E9B626E008E61F4 /* WJQTask.m */; };
+		043DBBD21E9B626E008E61F4 /* WJQTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 043DBBD01E9B626E008E61F4 /* WJQTaskManager.m */; };
+		043DBBD61E9B6293008E61F4 /* TWVCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 043DBBD51E9B6293008E61F4 /* TWVCManager.m */; };
 		045519311E8B9F3A004B132E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045519301E8B9F3A004B132E /* main.m */; };
 		045519341E8B9F3A004B132E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045519331E8B9F3A004B132E /* AppDelegate.m */; };
 		0455193A1E8B9F3A004B132E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045519381E8B9F3A004B132E /* Main.storyboard */; };
@@ -22,8 +25,6 @@
 		045519701E8BA8CB004B132E /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0455196F1E8BA8CB004B132E /* DownloadViewController.m */; };
 		045519731E8BA901004B132E /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045519721E8BA901004B132E /* MyTabBarController.m */; };
 		045519761E8BBBD8004B132E /* TaskListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045519751E8BBBD8004B132E /* TaskListCell.m */; };
-		0455197B1E8C9E49004B132E /* WJQTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0455197A1E8C9E49004B132E /* WJQTask.m */; };
-		0455197E1E8C9E56004B132E /* WJQTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0455197D1E8C9E56004B132E /* WJQTaskManager.m */; };
 		0485E0921E975BB7007A7E4F /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485E0911E975BB7007A7E4F /* download@2x.png */; };
 		0485E0941E977CFD007A7E4F /* stopDownload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485E0931E977CFD007A7E4F /* stopDownload@2x.png */; };
 		0485E0961E9780A3007A7E4F /* startDownload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0485E0951E9780A3007A7E4F /* startDownload@2x.png */; };
@@ -56,6 +57,12 @@
 		04000B431E8E2D4200A38197 /* TaskFailedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskFailedCell.m; sourceTree = "<group>"; };
 		04000B451E8E360F00A38197 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		04000B461E8E360F00A38197 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		043DBBCD1E9B626E008E61F4 /* WJQTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJQTask.h; sourceTree = "<group>"; };
+		043DBBCE1E9B626E008E61F4 /* WJQTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJQTask.m; sourceTree = "<group>"; };
+		043DBBCF1E9B626E008E61F4 /* WJQTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJQTaskManager.h; sourceTree = "<group>"; };
+		043DBBD01E9B626E008E61F4 /* WJQTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJQTaskManager.m; sourceTree = "<group>"; };
+		043DBBD41E9B6293008E61F4 /* TWVCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWVCManager.h; sourceTree = "<group>"; };
+		043DBBD51E9B6293008E61F4 /* TWVCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWVCManager.m; sourceTree = "<group>"; };
 		0455192C1E8B9F3A004B132E /* WJQFileDownloadManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJQFileDownloadManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045519301E8B9F3A004B132E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		045519321E8B9F3A004B132E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,10 +86,6 @@
 		045519721E8BA901004B132E /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
 		045519741E8BBBD8004B132E /* TaskListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListCell.h; sourceTree = "<group>"; };
 		045519751E8BBBD8004B132E /* TaskListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListCell.m; sourceTree = "<group>"; };
-		045519791E8C9E49004B132E /* WJQTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJQTask.h; sourceTree = "<group>"; };
-		0455197A1E8C9E49004B132E /* WJQTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJQTask.m; sourceTree = "<group>"; };
-		0455197C1E8C9E56004B132E /* WJQTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJQTaskManager.h; sourceTree = "<group>"; };
-		0455197D1E8C9E56004B132E /* WJQTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJQTaskManager.m; sourceTree = "<group>"; };
 		0485E0911E975BB7007A7E4F /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
 		0485E0931E977CFD007A7E4F /* stopDownload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stopDownload@2x.png"; sourceTree = "<group>"; };
 		0485E0951E9780A3007A7E4F /* startDownload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startDownload@2x.png"; sourceTree = "<group>"; };
@@ -117,6 +120,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043DBBCB1E9B6223008E61F4 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				043DBBD31E9B6293008E61F4 /* VCManager */,
+				043DBBCC1E9B626E008E61F4 /* WJQTaskManager */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		043DBBCC1E9B626E008E61F4 /* WJQTaskManager */ = {
+			isa = PBXGroup;
+			children = (
+				043DBBCD1E9B626E008E61F4 /* WJQTask.h */,
+				043DBBCE1E9B626E008E61F4 /* WJQTask.m */,
+				043DBBCF1E9B626E008E61F4 /* WJQTaskManager.h */,
+				043DBBD01E9B626E008E61F4 /* WJQTaskManager.m */,
+			);
+			path = WJQTaskManager;
+			sourceTree = "<group>";
+		};
+		043DBBD31E9B6293008E61F4 /* VCManager */ = {
+			isa = PBXGroup;
+			children = (
+				043DBBD41E9B6293008E61F4 /* TWVCManager.h */,
+				043DBBD51E9B6293008E61F4 /* TWVCManager.m */,
+			);
+			path = VCManager;
+			sourceTree = "<group>";
+		};
 		045519231E8B9F3A004B132E = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				045519661E8BA597004B132E /* Function */,
-				045519651E8BA597004B132E /* Class */,
+				043DBBCB1E9B6223008E61F4 /* Class */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -199,13 +231,6 @@
 				0485E0911E975BB7007A7E4F /* download@2x.png */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		045519651E8BA597004B132E /* Class */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Class;
 			sourceTree = "<group>";
 		};
 		045519661E8BA597004B132E /* Function */ = {
@@ -242,7 +267,6 @@
 		045519691E8BA6B8004B132E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				045519781E8C9E20004B132E /* WJQTaskManager */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,17 +286,6 @@
 				04000B461E8E360F00A38197 /* HeaderView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		045519781E8C9E20004B132E /* WJQTaskManager */ = {
-			isa = PBXGroup;
-			children = (
-				045519791E8C9E49004B132E /* WJQTask.h */,
-				0455197A1E8C9E49004B132E /* WJQTask.m */,
-				0455197C1E8C9E56004B132E /* WJQTaskManager.h */,
-				0455197D1E8C9E56004B132E /* WJQTaskManager.m */,
-			);
-			path = WJQTaskManager;
 			sourceTree = "<group>";
 		};
 		99D20E4DEEC348A0F3203D8B /* Frameworks */ = {
@@ -483,17 +496,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0455196D1E8BA8AF004B132E /* TaskViewController.m in Sources */,
-				0455197B1E8C9E49004B132E /* WJQTask.m in Sources */,
 				045519341E8B9F3A004B132E /* AppDelegate.m in Sources */,
-				0455197E1E8C9E56004B132E /* WJQTaskManager.m in Sources */,
 				045519761E8BBBD8004B132E /* TaskListCell.m in Sources */,
 				045519311E8B9F3A004B132E /* main.m in Sources */,
+				043DBBD61E9B6293008E61F4 /* TWVCManager.m in Sources */,
 				045519701E8BA8CB004B132E /* DownloadViewController.m in Sources */,
+				043DBBD11E9B626E008E61F4 /* WJQTask.m in Sources */,
 				04000B471E8E360F00A38197 /* HeaderView.m in Sources */,
 				045519731E8BA901004B132E /* MyTabBarController.m in Sources */,
 				04000B411E8E2D3200A38197 /* TaskFinishedCell.m in Sources */,
 				04000B3E1E8E271200A38197 /* TaskLoadingCell.m in Sources */,
 				04000B441E8E2D4200A38197 /* TaskFailedCell.m in Sources */,
+				043DBBD21E9B626E008E61F4 /* WJQTaskManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

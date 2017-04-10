@@ -44,13 +44,21 @@
 
 
 
-
 /**
  单例方法
 
  @return WJQTaskManager
  */
 + (instancetype)sharedManager;
+
+
+/**
+ 判断任务是否已经下载成功
+
+ @param task 当前目标任务
+ @return YES，任务已经下载成功;反之没有
+ */
+- (BOOL)taskIsLoaded:(WJQTask *)task;
 
 
 /**
