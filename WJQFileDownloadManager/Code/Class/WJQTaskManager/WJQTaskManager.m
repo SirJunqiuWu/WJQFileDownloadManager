@@ -78,6 +78,11 @@ static WJQTaskManager *myManager = nil;
         //当和服务器进行下载请求交互的时候，服务器会返回目标任务的总大小和当前下载的大小
         __weak typeof(self)WeakSelf = self;
         [self.sessionManager setDownloadTaskDidWriteDataBlock:^(NSURLSession * _Nonnull session, NSURLSessionDownloadTask * _Nonnull downloadTask, int64_t bytesWritten, int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite) {
+            if (totalBytesExpectedToWrite <0 && totalBytesWritten!=0)
+            {
+                //防止在下载链接出错的情况下，出现的数据问题
+                totalBytesExpectedToWrite = totalBytesWritten;
+            }
             if (WeakSelf.downloadingTaskArr.count >0)
             {
                 for(WJQTask *obj in WeakSelf.downloadingTaskArr)

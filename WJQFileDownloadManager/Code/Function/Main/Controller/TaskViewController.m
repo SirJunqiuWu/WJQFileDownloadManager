@@ -74,6 +74,10 @@
     NSURL *urlFour = [NSURL URLWithString:@"http://img3.imgtn.bdimg.com/it/u=2140696183,3131076942&fm=23&gp=0.jpg"];
     WJQTask *taskFour = [[WJQTask alloc]initWithURL:urlFour];
     [dataArray addObject:taskFour];
+    
+    NSURL *urlFive = [NSURL URLWithString:@"http://weibo.com/tv/v/a6b99f4f51ff5f39406d4cc4c"];
+    WJQTask *taskFive = [[WJQTask alloc]initWithURL:urlFive];
+    [dataArray addObject:taskFive];
 }
 
 #pragma mark - UITableViewDataSource && Delegate
